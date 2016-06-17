@@ -1,2 +1,23 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Dogs</h1>
+<a href="/create">Make a Dog</a>
+<ul>
+  {{#each list}}
+  <br>
+    <li>
+      <a href="/{{id}}">{{this.name}}</a>
+    </li>
+    <li>
+      <img src="{{this.image}}"/>
+    </li>
+    <li>
+      {{this.breed}}
+    </li>
+    <li>
+      {{this.awesome_level}}
+    </li>
+    <li>
+      {{this.fav_toy}}
+    </li>
+
+  {{/each}}
+</ul>
